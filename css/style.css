@@ -513,7 +513,9 @@ i {
 .with-hover-text span {
         display: none;
 }
-
+.contact-text{
+   word-wrap: break-word;
+}
 .zoom {
     background-image: url('../images/zoom.png');
     background-position: center center;
