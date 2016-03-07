@@ -14,7 +14,7 @@
     font-weight: 600;
 }
 
-.font-semibold {
+.font-bold {
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
 }
@@ -303,7 +303,6 @@ body {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: 'Yellowtail', cursive;
     font-weight: 400;
     font-size: medium;
     -webkit-transition: all .3s ease-in-out;
@@ -322,6 +321,20 @@ body {
     border: 1px solid #f15a22;
     outline: 0;
     color: #fff;
+}
+
+.btn-xl {
+  color: #fff;
+  font-family: 'Courier New', Courier;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-xl i {
+  font-size: .75em;
+  padding-right: 5px;
 }
 
 .title-row {
@@ -403,9 +416,15 @@ i {
     padding-top: 90px;
 }
 
-#slide-40 i {
-    font-size: 80px;
-    color: #0c2340;
+#slide-40 h3 {
+  font-size: 1em;
+  text-align: center;
+}
+
+#slide-40 p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-size: .7em;
 }
 
 #slide-4 {
@@ -413,6 +432,7 @@ i {
     color: #e4e6e5;
     padding-top: 90px;
 }
+
 
 #slide-4 h3 {
   font-size: .8em;
