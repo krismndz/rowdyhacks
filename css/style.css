@@ -462,6 +462,14 @@ i {
     padding-top: 90px;
 }
 
+#slide-7 {
+   background-color: #e4e6e5;
+   color: #4e4e4e;
+   padding-bottom: 75px;
+   padding-top: 90px;
+
+}
+
 @media (max-width: 767px) {
         #slide-6 {
                 background-image: none;
@@ -514,14 +522,6 @@ i {
                 display: none;
                 font-size: 20px;
         }
-
-#slide-7 {
-        background-color: #e4e6e5;
-        color: #4e4e4e;
-        font-size: 35px;
-        line-height: 50px;
-        text-align: center;
-}
 
 #lightbox-out {
         background-color: rgba( 0, 0, 0, 0.7 );
