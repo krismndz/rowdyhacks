@@ -1,4 +1,5 @@
-<html class=""><head lang="en">
+<html class="">
+<head lang="en">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -7,7 +8,7 @@
   <meta name="keywords" content="acm, utsa, the association for computing machinery, hackathon, rowdyhacks,">
   <meta property="og:title" content="">
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">    
@@ -18,74 +19,62 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">      
 </head>
 
-<body>
-  <div class="navbar navbar-fixed-top" data-activeslide="1">
-    <div class="container">
-      <!-- START NAVBAR  
-          .navbar-toggle is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon icon-gears"></span> 
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <div class="nav-collapse collapse navbar-responsive-collapse">
-        <ul class="nav row">
-          <li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="ROWDYHACKS">
-            <span class="icon icon-gears"></span> <span class="text">HOME</span></a>
-          </li>
-          <li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="ABOUT">
-            <span class="icon icon-user"></span> <span class="text">ABOUT</span></a>
-          </li>
-          <li data-slide="40" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-40" title="SCHEDULE">
-            <span class="icon icon-calendar"></span> <span class="text">SCHEDULE</span></a>
-          </li>
-          <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="FAQ">
-            <span class="icon icon-question"></span> <span class="text">FAQ</span></a>
-          </li>
-          <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="PRIZES">
-            <span class="icon icon-trophy"></span> <span class="text">PRIZES</span></a>
-          </li>
-          <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="CONTACT">
-            <span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- END NAVBAR -->
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- START NAVBAR  -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <ul class="nav navbar-nav row">
+                  <li class="col-2 col-sm-2 " id="link-1"><a class="page-scroll" href="#slide-1" title="ROWDYHACKS">
+                    <span class="icon icon-gears"></span> HOME</a>
+                  </li>
+                  <li class="col-2 col-sm-2" id="link-2"><a class="page-scroll" href="#slide-2" title="ABOUT">
+                    <span class="icon icon-user"></span> ABOUT</a>
+                  </li>
+                  <li class="col-2 col-sm-2" id="link-3"><a class="page-scroll" href="#slide-40" title="SCHEDULE">
+                    <span class="icon icon-calendar"></span> <span class="text">SCHEDULE</span></a>
+                  </li>
+                  <li class="col-2 col-sm-2" id="link-4"><a class="page-scroll" href="#slide-4" title="FAQ">
+                    <span class="icon icon-question"></span> <span class="text">FAQ</span></a>
+                  </li>
+                  <li class="col-2 col-sm-2" id="link-5"><a class="page-scroll" href="#slide-5" title="PRIZES">
+                    <span class="icon icon-trophy"></span> <span class="text">PRIZES</span></a>
+                  </li>
+                  <li class="col-2 col-sm-2" id="link-6"><a class="page-scroll" href="#slide-6" title="CONTACT">
+                    <span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a>
+                  </li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav> <!-- /.nav -->
 
   <!-- START OF INTRO SECTION -->
-  <div class="slide story" id="slide-1" data-slide="1">
+  <div class="slide story" id="slide-1">
     <div class="container">
       <div id="home-row-1" class="row">
-        <div class="col-12" id="child">
-          <h1 class="font-semibold">Rowdy<span class="font-thin" id="yellowtail">Hacks</span></h1>
-          <h4 class="font-thin font-main">Hosted by <span class="font-semibold">ACM</span> UTSA</h4>
+        <div class="col-12">
+          <img class="img-responsive" src="images/RowdyHacks.png" />
+          <br><br>
         </div>
       </div>
-      <br><br><br>
+      <br><br>
       <div id="home-row-2" class="row">
-         <div class="col-2 col-sm-2 col-lg-offset-3 col-sm-offset-3" id="volunteer">
-          <a href="rowdyhacks.html" target="_blank"><button type="button" class="btn-xl btn-default" onclick="window.location.assign('rowdyhacks.html')">
-            <i class="fa fa-chevron-right"></i>ACM UTSA</button>
-          </a>
-         </div>
-         <div class="col-2 col-sm-2" id="volunteer">
-          <a href="rowdyhacks.html" target="_blank"><button type="button" class="btn-xl btn-default" onclick="window.location.assign('rowdyhacks.html')">
+         <div class="col-12 col-sm-12" id="volunteer">
+          <a href="rowdyhacks.html" target="_blank"><button type="button" class="btn-xl btn-default" onclick="window.open('rowdyhacks.html', '_blank')">
             <i class="fa fa-chevron-right"></i>Register</button>
           </a>
          </div>
-         <div class="col-2 col-sm-2" id="volunteer">
-          <a href="rowdyhacks.html" target="_blank"><button type="button" class="btn-xl btn-default" onclick="window.location.assign('rowdyhacks.html')">
-            <i class="fa fa-chevron-right"></i>Button idea?</button>
-          </a>
-         </div>
       </div>
-      <br><br><br>
+      <br><br>
       <div id="scroll-down" class="row">
         <div class="col-12 col-sm-12">
-          <a href="#slide-2" class="btn btn-circle">
+          <a data-slide="2" href="#slide-2" class="btn btn-circle page-scroll">
             <i class="fa fa-level-down animated"></i> 
           </a>
         </div>
@@ -95,7 +84,7 @@
   <!-- END OF INTRO SECTION -->
 
     <!-- === Slide 2 === -->
-    <div class="slide story" id="slide-2" data-slide="2">
+    <div class="slide story" id="slide-2">
         <div class="container">
             <div class="row title-row">
                 <div class="col-12 font-thin header">About <span class="font-semibold">RowdyHacks</span></div>
@@ -116,8 +105,8 @@
         </div><!-- /container -->
     </div><!-- /slide2 -->
 
-    <!-- === Slide 40 === -->
-    <div class="slide story" id="slide-40" data-slide="40">
+    <!-- === Slide 3 === -->
+    <div class="slide story" id="slide-40">
         <div class="container">
             <div class="row title-row">
                 <div class="col-12 font-thin header">Event<span class="font-semibold"> Schedule</span></div>
@@ -126,58 +115,56 @@
                 <div class="hr">&nbsp;</div>
             </div><!-- /row -->
             <div class="row subtitle-row">
-                <div class="col-sm-1 hidden-sm">&nbsp;</div>
-                <div class="col-12 col-sm-10 font-bold"><h3>Friday</h3></div>
+                <div class="col-12 col-sm-12 font-bold schedule"><h3>Friday</h3></div>
                 <div class="row subtitle-row">
-                    <div class="col-lg-6 col-sm-6 font-bold">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>5:00pm - 6:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Check In/Registration</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>6:00pm - 7:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Opening Ceremonies/Dinner</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>12:00am</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Midnight Snack</p>
                     </div>
                 </div>
-                <div class="col-sm-1 hidden-sm">&nbsp;</div>
-                <div class="col-12 col-sm-10 font-bold"><h3>Saturday</h3></div>
-                    <div class="col-lg-6 col-sm-6">
+                <div class="col-12 col-sm-12 font-bold schedule"><h3>Saturday</h3></div>
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>7:00am</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Breakfast</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>12:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Project Submissions/Lunch</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>12:00pm - 3:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Judging</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>3:00pm - 5:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Presentations/Prizes</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-time">
                       <p>5:00pm - 6:00pm</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 schedule-event">
                       <p>Closing Ceremonies</p>
                     </div>
                 </div>
@@ -196,82 +183,66 @@
             </div>
 
             <!-- Start of first row of questions -->
-            <div class="row subtitle-row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-faq">What is a hackathon?</h3>
-                <p class="font-thin">Hackathons are events where individuals form teams to create, design, and develop projects.
-                </p>
+                <p class="font-thin">Hackathons are events where individuals form teams to create, design, and develop projects.</p>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">Why should I come?</h3>
                 <p class="font-thin">You'll be able to meet new people, discuss ideas, and collaborate on interesting projects.</p>
               </div>
-            </div>
             <!-- End of first row of questions -->
 
             <!-- Start of second row of questions -->
-            <div class="row subtitle-row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">How many people will be participating?</h3>
-                <p class="font-thin">There will be a limited number of participants. The earlier you sign up, the better the chance you have at being accepted.
-                </p>
+                <p class="font-thin">There will be a limited number of participants. The earlier you sign up, the better the chance you have at being accepted.</p>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">Where will RowdyHacks be located?</h3>
                 <p class="font-thin">RowdyHacks will take place on the first floor of the North Paseo Building at UTSA's main campus.</p>
               </div>
-            </div>
             <!-- End of second row of questions -->
 
             <!-- Start of third row of questions -->
-            <div class="row subtitle-row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">Who can attend?</h3>
-                <p class="font-thin">Any undergraduate or graduate student currently enrolled at UTSA. 
-                </p>
+                <p class="font-thin">Any undergraduate or graduate student currently enrolled at UTSA.</p>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">What can I build?</h3>
-                <p class="font-thin">Be creative! Anything you want web/mobile applications, a personal idea
-                </p>
+                <p class="font-thin">Be creative! Anything you want from web apps, mobile apps, and more!</p>
               </div>
-            </div>
             <!-- End of third row of questions -->
 
             <!-- Start of fourth row of questions -->
-            <div class="row subtitle-row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">How much will it cost?</h3>
-                <p class="font-thin">We will provide food, snacks, beverages. You just have to show up. 
-                </p>
+                <p class="font-thin">We will provide food, snacks, beverages. You just have to show up.</p>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">What do I need to bring?</h3>
-                <p class="font-thin">Here are some items we recommend you bring:<br>Laptops, charger, a change of clothes, and toiletries
-                </p>
+                <p class="font-thin">Here are some items we recommend you bring:<br>Laptops, charger, a change of clothes, and toiletries</p>
               </div>
-            </div>
             <!-- End of fourth row of questions -->
 
             <!-- Start of fourth row of questions -->
-            <div class="row subtitle-row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">How big can a team be?</h3>
-                <p class="font-thin">We recommend teams of up to four members
-                </p>
+                <p class="font-thin">Team sizes will be 3-4 members</p>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 subtitle-row">
                 <h3 class="font-semibold">What if I don't have a team or idea?</h3>
                 <p class="font-thin">We will give you the opportunity to form teams during the opening ceremonies.</p>
               </div>
             </div>
             <!-- End of fourth row of questions -->
-
+          </div>
         </div><!-- /container -->
     </div><!-- /slide4 -->
 
@@ -287,7 +258,7 @@
             </div><!-- /row -->
             <div class="row subtitle-row">
                 <div class="col-sm-1 hidden-sm">&nbsp;</div>
-                <div class="col-12 col-sm-10 font-light">Prize information coming soon</div>
+                <div class="col-12 col-sm-10 font-light">Prize information coming soon!<br><br><i class="icon icon-gift"></i></div>
                 <div class="col-sm-1 hidden-sm">&nbsp;</div>
             </div><!-- /row -->
         </div><!-- /container -->
@@ -339,29 +310,28 @@
     </div>
     <!-- Slide 6 -->
 
+    <!-- === Slide 7 / Footer === -->
+    <div class="slide story" id="slide-7">
+        <div class="container">
+            <div class="row title-row">
+                <div class="col-12">
+                  <a data-slide="1" href="#slide-1" class="btn btn-circle page-scroll">
+                    <i class="fa fa-level-up animated"></i> 
+                  </a>
+                </div>
+              </div>
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div>
+    <!-- Slide 6 -->
+
 <!-- SCRIPTS -->
 <script src="js/html5shiv.js"></script>
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 
-<!-- fancybox init -->
-<script>
-$(document).ready(function(e) {
-    var lis = $('.nav > li');
-    menu_focus( lis[0], 1 );
-    
-    $(".fancybox").fancybox({
-            padding: 10,
-            helpers: {
-                    overlay: {
-                            locked: false
-                    }
-            }
-    });
-});
-</script>
-</body></html>
+</body>
+</html>
