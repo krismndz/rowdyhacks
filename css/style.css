@@ -16,18 +16,12 @@
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
-.font-main {
-  text-align: right;  
-  margin-right: 150px;
-}
 .font-light {
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
-.font-date {
+#yellowtail {
   font-family: 'Yellowtail', cursive;
-  font-weight: 300;
-  color: #f8b195;
 }
 
 .header {
@@ -75,7 +69,7 @@ body {
   text-align: center;
   color: #6c5b7b;
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   transition: all .5 linear;
 }
 
@@ -94,22 +88,21 @@ body {
 }
 
 @media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
+  .navbar-custom {
+    padding: 10px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
 
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    background: #000;
+  }
 }
-
 
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
@@ -123,25 +116,21 @@ body {
 }
 
 #slide-1 {
-  background-image: url('../images/introbackground.png');
+  background-image: url('../images/test.png');
   font-family: 'Yellowtail', cursive;
   color: #e0e0e0;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
-  background-size: 100%;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   bottom: 0px;
-  display: block;
-}
-
-#yellowtail {
-  font-family: 'Yellowtail', cursive;
+  display: table;
 }
 
 #slide-1 h1 {
@@ -149,7 +138,7 @@ body {
 }
 
 #home-row-1 {
-  padding-top: 190px;
+  padding-top: 160px;
 }
 
 #home-row-1 h1 {
@@ -174,8 +163,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  
-
   .schedule {
     padding-bottom: 5px;
   }
@@ -231,29 +218,28 @@ body {
 }
 
 .btn-default {
-    border: 1px solid #c06c84;
-    color: #355c7d;
-    background-color: transparent;
+  border: 1px solid #c06c84;
+  color: #355c7d;
+  background-color: #e0e0e0;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #355c7d;
-    border: 1px solid #f67280;
-    opacity: .6;
-    outline: 0;
-    color: #fff;
+  background-color: #355c7d;
+  border: 1px solid #f67280;
+  opacity: .6;
+  outline: 0;
+  color: #fff;
 }
 
 .btn-xl {
-  color: #fff;
+  color: #f67280;
   font-family: 'Courier New', Courier;
   font-weight: 200;
   text-transform: uppercase;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-
   padding: 18px 28px;
   font-size: 22px;
   line-height: normal;
@@ -457,6 +443,13 @@ i {
   padding-bottom: 0px;
 }
 
+#slide-7 img {
+  margin-top: 15px;
+  padding: 15px 16px;
+  max-height: auto;
+  max-width: 100%;
+}
+
 #slide-7 .btn-circle {
   background-color: #f67280;
   border: 2px solid #c06c84;
@@ -468,12 +461,24 @@ i {
   padding-bottom: 0px;
 }
 
-.footer {
-  font-size: .4em;
+#slide-7 .contact{
+  list-style-type: none;
+  font-size: .75em;
+  text-align: right;
 }
 
-.footer li {
-  list-style-type: none;
+#slide-7 a {
+  color: #355c7d;
+}
+
+#slide-7 a:hover,
+#slide-6 a:focus {
+  color: #f67280;
+  text-decoration: none;
+}
+
+.footer {
+  padding-top: 15px;
 }
 
 .title-row {
@@ -585,4 +590,25 @@ i {
         -moz-transform: scale(1);
         transform: scale(1);
     }
+}
+
+@-moz-document url-prefix() {  
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+     img{
+        max-width: 100%;
+    }    
+}
+
+@media (min-width: 1500px) {
+  #home-row-2{
+  }
+  #home-row-1 {
+    margin-top: 150px;
+  }
 }
