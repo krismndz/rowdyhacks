@@ -412,23 +412,44 @@ i {
 
 /* Sponsorship Section
 */
+#slide-60 {
+  background-color: #355c7d;
+  color: #355C7D;
+  padding-top: 90px;
+}
 
+#slide-60 .font-light{
+   color:white;
+}
 
+#slide-60 h3 {
+  font-size: .8em;
+  color:white;
+  text-align: left;
+}
 
+#slide-60 p {
+  font-size: .6em;
+  color:white;
+  text-align: left;
+}
 
-
-
-
-
-
-
-
+#slide-60 i {
+  font-size: 80px;
+  color: white;
+}
 
 /* Contact Section
 */
 #slide-6 {
   background-color: #355c7d;
   color: #355C7D;
+  padding-top: 90px;
+}
+
+#slide-6 {
+  background-color:#6c5b7b;
+  color: #e4e6e5;
   padding-top: 90px;
 }
 
