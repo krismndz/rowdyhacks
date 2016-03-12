@@ -12,8 +12,8 @@ For more information, please contact ACM at acm.utsa@gmail.com
 
 
 ###### Contributors
-Kurt King
-Bryan Deloeste
-Kristin Mendoze
-Andrew Hutton
-Alex Betancourt
+Kurt King<br>
+Bryan Deloeste<br>
+Kristin Mendoza<br>
+Andrew Hutton<br>
+Alex Betancourt<br>
