@@ -13,14 +13,12 @@ For more information, please contact ACM at acm.utsa@gmail.com
 
 ###### Contributors
 Kurt King<br>
-Github:<br>
-https://github.com/kurtaking
+Github: https://github.com/kurtaking
 
 Bryan Deloeste<br>
-Github:<br>
+Github: https://github.com/bdeloeste
 
 Kristin Mendoza<br>
-Github:<br>
+Github: https://github.com/krismndz
 
-Alex Betancourt<br>
-Github:<br>
+Alex Betancourt
