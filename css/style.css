@@ -1,4 +1,20 @@
-/* Main font styles */
+/******************************************************************************
+  RowdyHacks Website CSS                                        March 12, 2016
+  Copyright ACM UTSA Student Chapter
+  Written by: Kurt King
+  Contributions: Bryan Deloeste, Kristin Mendoza
+                
+  Color Scheme (Layout/Font)
+    #f8b195
+    #fb67280
+    #c06c84  
+    #6c5b7b 
+    #355c7d
+    
+******************************************************************************/
+
+/* Main font styles
+*/
 .font-thin {
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 200;
@@ -20,11 +36,18 @@
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
+#yellowtail {
+  font-family: 'Yellowtail', cursive;
+}
 
+/* Main Section Header
+*/
 .header {
   color: #f8b195;
 }
 
+/* Global CSS
+*/
 * {
   position: relative;
 }
@@ -41,13 +64,22 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
+/* Main heading divider bar
+*/
 .hr {
   color: #f67280;
   background-color: #f67280;
   border-color: #f67280;
 }
+.line-row .hr {
+  background-color: #f67280;
+  height: 5px;
+  margin: 0 auto;
+  width: 33%;
+}
 
-/* NAVBAR */
+/* NAVBAR 
+*/
 .navbar-custom {
   background-color: #e4e6e5;
   border-bottom: 0 none;
@@ -56,13 +88,11 @@ body {
   text-align: center;
   box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
 }
-
 .navbar-custom .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: middle;
 }
-
 .navbar-custom .nav a {
   text-align: center;
   color: #6c5b7b;
@@ -70,13 +100,11 @@ body {
   font-weight: 600;
   transition: all .5 linear;
 }
-
 .nav li {
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
 }
-
 .nav > li > a:hover,
 .nav > li > a:focus {
   color: #f67280;
@@ -85,6 +113,8 @@ body {
   outline: none;
 }
 
+/* Mobile navbar icon
+*/
 .fa-bars {
   color: #000;
 }
@@ -163,6 +193,8 @@ body {
   box-shadow: 15px 3px 15px 15px rgba(0,0,0,0.06);
 }
 
+/* Landing Page Intro Section
+*/
 #slide-1 {
   background-image: url('../images/test.png');
   font-family: 'Yellowtail', cursive;
@@ -181,14 +213,9 @@ body {
   display: block;
 }
 
-#yellowtail {
-  font-family: 'Yellowtail', cursive;
-}
-
 #slide-1 h1 {
   font-family: 'Yellowtail', cursive;
 }
-
 #slide-1 img {
   margin-left: auto;
   margin-right: auto;
@@ -211,94 +238,14 @@ body {
 
 }
 
-.schedule {
-  padding-bottom: 5px;
-}
-
-.schedule-time {
-  text-align: right;
-  padding-right: 30px;
-}
-.schedule-event {
-  text-align: left;
-  padding-left: 30px;
-}
-
-@media (max-width: 767px) {
-  .schedule {
-    padding-bottom: 5px;
-  }
-
-  .schedule-time {
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 15px;
-  }
-  .schedule-event {
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .schedule {
-    padding-bottom: 5px;
-  }
-  .schedule-time {
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 25px;
-  }
-  .schedule-event {
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  #home-row-1 {
-    padding-top: 100px;
-  }
-  .footer-left {
-    padding-top: 15px;
-  }
-  .font-about {
-    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: .5em;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  
-}
-
 #slide-2{
   background-color: #355C7D;
   color: #fff;
   padding-top: 90px;
 }
 
-.btn {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: medium;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    background-color: #355c7d;
-    border: 1px solid #f67280;
-    opacity: .6;
-    outline: 0;
-    color: #fff;
-}
-
+/* Landing Page Register Button
+*/
 .btn-xl {
   border: 1px solid #f67280;
   color: #fff;
@@ -312,15 +259,18 @@ body {
   font-size: 22px;
   line-height: normal;
 }
-
 .btn-xl:hover,
 .btn-xl:focus {
   background-color: #f8b195;
   border: 1px solid #f8b195;
-  color: #fff;
+  color: #6c5b7b;
+
 }
 
-/* Grow Shadow */
+
+
+/* Register Button Grow Shadow Effect
+*/
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -381,32 +331,8 @@ i {
 }
     
 
-@media (max-width: 767px) {
-  .title-row {
-    font-size: 34px;
-    padding-bottom: 33px;
-  }
-  
-  .subtitle-row {
-    font-size: 26px;
-    padding-bottom: 26px;
-    padding-top: 26px;
-  }
-  
-  .content-row {
-    padding-top: 29px;
-  }
-  
-  .content-row h2 {
-    font-size: 24px;
-    padding-bottom: 26px;
-  }
-  
-  .content-row h4 {
-    font-size: 20px;
-  }
-}
-
+/* Event schedule section
+*/
 #slide-40 {
   background-color: #6c5b7b;
   color: #fff;
@@ -424,6 +350,37 @@ i {
   font-size: .7em;
 }
 
+.schedule {
+  padding-bottom: 5px;
+}
+.schedule-time {
+  text-align: right;
+  padding-right: 30px;
+}
+.schedule-event {
+  text-align: left;
+  padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .schedule {
+    padding-bottom: 5px;
+  }
+  .schedule-time {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .schedule-event {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+/* Frequently Asked Questions Section
+*/
 #slide-4 {
   background-color: #355C7D;
   color: #e4e6e5;
@@ -445,12 +402,16 @@ i {
   color: white;
 }
 
+/* Prize Section
+*/
 #slide-5 {
   background-color: #6c5b7b;
   color: #e4e6e5;
   padding-top: 90px;
 }
 
+/* Contact Section
+*/
 #slide-6 {
   background-color: #355c7d;
   color: #355C7D;
@@ -517,6 +478,9 @@ i {
   word-wrap: break-word;
 }
 
+/* Footer Section
+   Includes ACM link, scroll up button, and footer links
+*/
 #slide-7 {
   background-color: #fff;
   padding-bottom: 0px;
@@ -553,13 +517,6 @@ i {
   padding-bottom: 50px;
 }
 
-.line-row .hr {
-  background-color: #f67280;
-  height: 5px;
-  margin: 0 auto;
-  width: 33%;
-}
-
 .subtitle-row {
   font-size: 35px;
   padding-bottom: 40px;
@@ -571,23 +528,8 @@ i {
   color: white;
 }
         
-
-@media (max-width: 767px) {
-  .title-row {
-    font-size: 34px;
-    padding-bottom: 33px;
-  }
-  
-  .subtitle-row {
-   right font-size: 26px;
-    padding-bottom: 26px;
-    padding-top: 26px;
-  }
-  .footer {
-    padding-right: 15px;
-  }
-}
-
+/* Footer Section Page Up Button
+*/
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -662,3 +604,54 @@ i {
     }
 }
 
+/* Repsonsive CSS for devices smaller than 767px in width
+   Usually tablet devices
+*/ 
+@media (max-width: 767px) {
+  .title-row {
+    font-size: 34px;
+    padding-bottom: 33px;
+  }
+  
+  .subtitle-row {
+   right font-size: 26px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+  }
+  .footer {
+    padding-right: 15px;
+  }
+}
+
+/* Repsonsive CSS for devices smaller than 480px in width
+   Usually mobile devices
+*/ 
+@media (max-width: 480px) {
+  .schedule {
+    padding-bottom: 5px;
+  }
+  .schedule-time {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 25px;
+  }
+  .schedule-event {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #home-row-1 {
+    padding-top: 100px;
+  }
+  .footer-left {
+    margin-top: 25px;
+  }
+  .font-about {
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: .5em;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
