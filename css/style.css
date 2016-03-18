@@ -21,7 +21,7 @@
 .font-about {
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 200;
-  font-size: .85em;
+  font-size: 85%;
 }
 .font-semibold {
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
@@ -35,6 +35,13 @@
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
+.font-map {
+  color: #f67280;
+  font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 #yellowtail {
   font-family: 'Yellowtail', cursive;
 }
@@ -77,11 +84,12 @@ body {
   width: 33%;
 }
 
-/* Common styles for all menus */
+/* Navbar CSS
+*/
 .menu {
   line-height: 1;
   margin: 0 auto 3em;
-  background-color: #e4e6e5;
+  background-color: #f5f5f5;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -93,7 +101,6 @@ body {
   box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
-
 .menu__list {
   position: relative;
   display: -webkit-flex;
@@ -105,12 +112,10 @@ body {
   list-style: none;
   vertical-align: middle;
 }
-
 .menu__item {
   display: block;
   margin: 1em 0;
 }
-
 .menu__link {
   font-size: 1.05em;
   font-weight: bold;
@@ -124,39 +129,37 @@ body {
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
 }
-
 .menu__link:hover,
 .menu__link:focus {
   outline: none;
   text-decoration: none;
 }
 
-/* Viola */
+/* Viola menu bar
+*/
 .menu--viola .menu__item {
   position: relative;
   margin: 0 1em;
   margin-bottom: 10px;
 }
-
 .menu--viola .menu__link {
   position: relative;
   display: block;
   text-align: center;
   color: #6c5b7b;
+  width: 130px;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
-
 .menu--viola .menu__link:hover,
 .menu--viola .menu__link:focus {
   color: #f67280;
 }
-
 .menu--viola .menu__item--current .menu__link {
   color: #f67280;
 }
-
 .menu--viola .menu__item::before,
 .menu--viola .menu__item::after,
 .menu--viola .menu__link::before,
@@ -167,7 +170,6 @@ body {
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
 }
-
 .menu--viola .menu__item::before,
 .menu--viola .menu__item::after {
   top: 0;
@@ -176,19 +178,16 @@ body {
   -webkit-transform: scale3d(1, 0, 1);
   transform: scale3d(1, 0, 1);
 }
-
 .menu--viola .menu__item::before {
   left: 0;
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
-
 .menu--viola .menu__item::after {
   right: 0;
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
 }
-
 .menu--viola .menu__link::before,
 .menu--viola .menu__link::after {
   left: 0;
@@ -197,19 +196,16 @@ body {
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
 }
-
 .menu--viola .menu__link::before {
   top: 0;
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
 }
-
 .menu--viola .menu__link::after {
   bottom: 0;
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
-
 .menu--viola .menu__item--current::before,
 .menu--viola .menu__item--current::after,
 .menu--viola .menu__item--current .menu__link::before,
@@ -227,7 +223,6 @@ body {
 .fa-bars {
   color: #000;
 }
-
 .navbar-header {
   display: block;
   text-align: right;
@@ -289,17 +284,18 @@ body {
 */
 @media(min-width:567px) {
   .menu__list{
-      padding: 12px 0;
-      border-bottom: 0;
-      letter-spacing: 1px;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    padding: 12px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 }
-@media(min-width: 800px) {
-  .menu__link {
-    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
+
+@media(max-width: 960px) {
+  .menu--viola .menu__link {
+    width: 100%;
   }
 }
 
@@ -314,6 +310,8 @@ body {
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 
+/* Global slide CSS
+*/
 .slide {
   background-position: center center;
   background-repeat: no-repeat;
@@ -322,11 +320,24 @@ body {
   text-align: center;
   box-shadow: 15px 3px 15px 15px rgba(0,0,0,0.06);
 }
+.title-row {
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+.subtitle-row {
+  font-size: 35px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.subtitle-row a:hover,
+.subtitle-row a:focus {
+  text-decoration: none;
+}
 
 /* Landing Page Intro Section
 */
 #slide-1 {
-  background-image: url('../images/test.png');
+  background-color: #e4e6e5;
   font-family: 'Yellowtail', cursive;
   color: #e0e0e0;
   -webkit-background-size: 100%;
@@ -341,37 +352,16 @@ body {
   height: auto;
   bottom: 0px;
   display: block;
-}
-
-#slide-1 h1 {
-  font-family: 'Yellowtail', cursive;
+  vertic-align: center;
 }
 #slide-1 img {
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
+  max-width: 100%;
+  max-height: auto;
 }
-
-#home-row-1 {
-  padding-top: 190px;
-}
-
-#home-row-1 h1 {
-  font-size: 175px;
-}
-
-#home-row-1 h4 {
-  font-size: 32px;
-}
-
 #home-row-2 {
-
-}
-
-#slide-2{
-  background-color: #355C7D;
-  color: #fff;
-  padding-top: 90px;
+  padding-top: 10%;
 }
 
 /* Landing Page Register Button
@@ -388,16 +378,14 @@ body {
   padding-right: 60px;
   font-size: 22px;
   line-height: normal;
+  letter-spacing: 1px;
 }
 .btn-xl:hover,
 .btn-xl:focus {
   background-color: #f8b195;
   border: 1px solid #f8b195;
   color: #6c5b7b;
-
 }
-
-
 
 /* Register Button Grow Shadow Effect
 */
@@ -421,47 +409,15 @@ body {
   transform: scale(1.1);
 }
 
-.title-row {
-  font-size: 45px;
-  padding-bottom: 50px;
+/* About Section
+*/
+#slide-2{
+  background-color: #355C7D;
+  color: #fff;
+  padding-top: 90px;
 }
 
-.subtitle-row {
-  font-size: 35px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-.content-row {
-  padding-top: 45px;
-}
-
-.content-row i,
-#about-row-5 i {
-  display: block;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.content-row h2 {
-  font-size: 28px;
-  padding-bottom: 40px;
-}
-
-.content-row h4 {
-  font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-i {
-  font-size: 80px;
-  color: white;
-}
-    
-
-/* Event schedule section
+/* Event schedule Section
 */
 #slide-40 {
   background-color: #6c5b7b;
@@ -540,6 +496,14 @@ i {
   padding-top: 90px;
 }
 
+@media(min-width: 480px) {
+  #slide-5 p {
+  }
+  #slide-5 p {
+    font-size: .75em;
+  }
+}
+
 /* Sponsorship Section
 */
 #slide-60 {
@@ -549,18 +513,18 @@ i {
 }
 
 #slide-60 .font-light{
-   color:white;
+   color: #fff;
 }
 
 #slide-60 h3 {
   font-size: .8em;
-  color:white;
+  color: #fff;
   text-align: left;
 }
 
 #slide-60 p {
   font-size: .6em;
-  color:white;
+  color: #fff;
   text-align: left;
 }
 
@@ -580,13 +544,14 @@ i {
 #slide-6 p {
   color: #fff;
 }
-
-@media (max-width: 767px) {
-  #slide-6 {
-    background-image: none;
+@media(min-width: 480px) {
+  #slide-6 p {
+  }
+  #slide-6 p {
+    font-size: .75em;
   }
 }
-        
+
 #slide-6 .line-row .hr {
   background-color: #f67280;
   color: #000;
@@ -654,20 +619,23 @@ i {
 #slide-7 i {
   color: #355c7d;
   padding-bottom: 0px;
+  font-size: 1em;
 }
 
 .footer-left {
   vertical-align: middle;
   text-align: center; 
+  margin-top: 15px;
 }
 
 .footer-right {
   vertical-align: middle;
   font-size: .4em;
   text-align: right;
+  margin-top: 15px;
 }
 
-.footer-right li {
+.footer-right>ul>li {
   list-style-type: none;
 }
 
@@ -813,8 +781,4 @@ i {
     padding-right: 5px;
     padding-left: 5px;
   }
-}
-
-a:target {
-  padding-top: 20px;
 }

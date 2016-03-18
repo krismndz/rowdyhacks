@@ -3,10 +3,12 @@
   RowdyHacks Website                                            March 12, 2016
   Copyright ACM UTSA Student Chapter
   Written by: Kurt King
-  Contributions: Bryan Deloeste, Kristin Mendoza, Alex Betancourt
+  Contributions: Bryan Deloeste, Kristin Mendoza, Andrew Hutton, 
+                 Alex Betancourt
 
   Open Source:
   1. Ian Lunn - hover.css effects             http://ianlunn.co.uk/  
+  2. mdb - material design css
   ******************************************************************************
 -->
 
@@ -21,6 +23,7 @@
   <meta property="og:title" content="">
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/mdb.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">    
 
@@ -35,13 +38,12 @@
 <div id="overflow-wall" style="width:100%;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;">
 
   <!-- START NAVBAR  -->
-
- <section class="section section--menu" id="Juno">
+ <section class="section section--menu" id="Viola">
     <nav class="navbar-fixed-top menu menu--viola" role="navigation">
       <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        <i class="fa fa-bars hvr-icon-grow"></i>
-      </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars hvr-icon-grow"></i>
+        </button>
       </div>
       <div class="collapse navbar-collapse navbar-main-collapse">
         <ul class="menu__list">
@@ -59,26 +61,16 @@
 
   <!-- START OF INTRO SECTION -->
   <div class="slide story" id="slide-1">
-    <div class="container">
+    <div class="container verticalcenter text-center">
       <div id="home-row-1" class="row">
         <div class="col-12">
-          <img class="img-responsive" src="images/RowdyHacks.png" />
-          <br><br>
+          <img class="img-responsive wow fadeInDown" src="images/big2.png" />
         </div>
       </div>
-      <br><br>
       <div id="home-row-2" class="row">
          <div class="col-12 col-sm-12">
           <button type="button" class="btn btn-xl hvr-glow-shadow" onclick="window.open('rowdyhacks.html', '_blank')">Register</button>
          </div>
-      </div>
-      <br><br>
-      <div id="scroll-down" class="row">
-        <div class="col-12 col-sm-12">
-          <a data-slide="2" href="#slide-2" class="btn btn-circle page-scroll">
-            <i class="fa fa-level-down animated"></i> 
-          </a>
-        </div>
       </div>
     </div>
   </div>
@@ -88,17 +80,17 @@
     <div class="slide story" id="slide-2">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-thin header">About <span class="font-semibold">RowdyHacks</span></div>
+                <div class="col-12 font-thin header wow slideInLeft">About <span class="font-semibold">RowdyHacks</span></div>
             </div><!-- /row -->
             <div class="row line-row">
-                <div class="hr hvr-underline-from-center">&nbsp;</div>
+                <div class="hr">&nbsp;</div>
             </div><!-- /row -->
-            <div class="row subtitle-row">
+            <div class="row subtitle-row wow slideInRight">
                 <div class="col-12 font-about">
-                    <p>It’s official! Come join us at RowdyHacks as we build apps, games, and any other neat projects in 24 hours.
+                    <p class="flow-text">It’s official! Come join us at RowdyHacks as we build apps, games, and any other neat projects in 24 hours.
                        Whether you’re a seasoned hacker or new to the hackathon community, we’ve got your back through the whole hacking experience.</p>
                     <br>
-                    <p>If you aren’t familiar, a hackathon is where you turn your crazy ideas into real projects. Plenty of your fellow peers gather 
+                    <p class="flow-text">If you aren’t familiar, a hackathon is where you turn your crazy ideas into real projects. Plenty of your fellow peers gather 
                        to build something they’re passionate about so get involved in making incredible things.</p>
                     <br>
               </div>
@@ -110,12 +102,12 @@
     <div class="slide story" id="slide-40">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-thin header">Event<span class="font-semibold"> Schedule</span></div>
+                <div class="col-12 font-thin header wow slideInLeft">Event<span class="font-semibold"> Schedule</span></div>
             </div><!-- /row -->
             <div class="row line-row">
                 <div class="hr">&nbsp;</div>
             </div><!-- /row -->
-            <div class="row subtitle-row">
+            <div class="row subtitle-row wow slideInRight">
                 <div class="col-12 col-sm-12 font-bold schedule"><h3>Friday</h3></div>
                 <div class="row subtitle-row">
                     <div class="col-lg-6 col-sm-6 schedule-time">
@@ -177,72 +169,87 @@
     <div class="slide story faq" id="slide-4" data-slide="4">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-thin header">Frequently asked <span class="font-semibold">questions</span></div>
+                <div class="col-12 font-thin header wow slideInLeft">Frequently asked <span class="font-semibold">questions</span></div>
             </div><!-- /row -->
             <div class="row line-row">
                 <div class="hr">&nbsp;</div>
             </div>
 
             <!-- Start of first row of questions -->
-              <div class="col-lg-6 subtitle-row">
-                <h3 class="font-faq">What is a hackathon?</h3>
+              <div class="col-lg-6 subtitle-row wow slideInRight">
+                <h3 class="font-semibold">What is a hackathon?</h3>
                 <p class="font-thin">Hackathons are events where individuals form teams to create, design, and develop projects.</p>
               </div>
 
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">Why should I come?</h3>
                 <p class="font-thin">You'll be able to meet new people, discuss ideas, and collaborate on interesting projects.</p>
               </div>
             <!-- End of first row of questions -->
 
             <!-- Start of second row of questions -->
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">How many people will be participating?</h3>
                 <p class="font-thin">There will be a limited number of participants. The earlier you sign up, the better the chance you have at being accepted.</p>
               </div>
 
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">Where will RowdyHacks be located?</h3>
                 <p class="font-thin">RowdyHacks will take place on the first floor of the North Paseo Building at UTSA's main campus.</p>
               </div>
             <!-- End of second row of questions -->
 
             <!-- Start of third row of questions -->
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">Who can attend?</h3>
                 <p class="font-thin">Any undergraduate or graduate student currently enrolled at UTSA.</p>
               </div>
 
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">What can I build?</h3>
                 <p class="font-thin">Be creative! Anything you want from web apps, mobile apps, and more!</p>
               </div>
             <!-- End of third row of questions -->
 
             <!-- Start of fourth row of questions -->
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">How much will it cost?</h3>
                 <p class="font-thin">We will provide food, snacks, beverages. You just have to show up.</p>
               </div>
 
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">What do I need to bring?</h3>
                 <p class="font-thin">Here are some items we recommend you bring:<br>Laptops, charger, a change of clothes, and toiletries</p>
               </div>
             <!-- End of fourth row of questions -->
 
             <!-- Start of fourth row of questions -->
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">How big can a team be?</h3>
                 <p class="font-thin">Team sizes will be 3-4 members</p>
               </div>
 
-              <div class="col-lg-6 subtitle-row">
+              <div class="col-lg-6 subtitle-row wow slideInRight">
                 <h3 class="font-semibold">What if I don't have a team or idea?</h3>
                 <p class="font-thin">We will give you the opportunity to form teams during the opening ceremonies.</p>
               </div>
-            </div>
             <!-- End of fourth row of questions -->
+
+            <!-- Start of fifth row of questions -->
+              <div class="col-lg-6 subtitle-row wow slideInRight">
+                <h3 class="font-semibold">Where will I be allowed to park?</h3>
+                <p class="font-thin">Participants may park in any Faculty A/B or commuter spot starting at 5pm. We recommend trying the
+                                     parking lot directly in front of the Bauerle Garage (Bauerle Rd Lot 3).
+                                     <br>A map of UTSA can be found 
+                                     <a href="https://www.utsa.edu/_files/images/visit/MainCampusMaps.jpg" target="_blank">
+                                     <span class="font-map">here</span></a>.</p>
+              </div>
+              <div class="col-lg-6 subtitle-row wow slideInRight">
+                <h3 class="font-semibold">Interested in sponsoring?</h3>
+                <p class="font-thin">Please <a href="mailto:acm.utsa@gmail.com"><span class="font-map">contact us</span></a> via e-mail at acm.utsa@gmail.com for more details.</p> 
+              </div>
+            </div>
+            <!-- End of fifth row of questions -->
           </div>
         </div><!-- /container -->
     </div><!-- /slide4 -->
@@ -252,15 +259,15 @@
     <div class="slide story" id="slide-5" data-slide="5">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-thin header">RowdyHacks <span class="font-semibold">Prizes</span></div>
+                <div class="col-12 font-thin header wow slideInLeft">RowdyHacks <span class="font-semibold">Prizes</span></div>
             </div><!-- /row -->
             <div class="row line-row">
                 <div class="hr">&nbsp;</div>
             </div><!-- /row -->
-            <div class="row subtitle-row">
-                <div class="col-sm-1 hidden-sm">&nbsp;</div>
-                <div class="col-12 col-sm-12 font-light">Prize information coming soon!<br><br><i class="icon icon-gift"></i></div>
-                <div class="col-sm-1 hidden-sm">&nbsp;</div>
+            <div class="row subtitle-row wow slideInRight">
+                <div class="col-12 col-sm-12 font-light">
+                  <p>Prize information coming soon!</p><i class="icon icon-gift"></i>
+                </div>
             </div><!-- /row -->
         </div><!-- /container -->
     </div><!-- /slide5 -->
@@ -269,22 +276,22 @@
     <div class="slide story" id="slide-6" data-slide="6">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-thin header">Contact<span class="font-semibold"> RowdyHacks</span></div>
+                <div class="col-12 font-thin header wow slideInLeft">Contact<span class="font-semibold"> RowdyHacks</span></div>
             </div><!-- /row -->
             <div class="row line-row">
                 <div class="hr">&nbsp;</div>
             </div><!-- /row -->
-            <div class="row subtitle-row">
+            <div class="row subtitle-row wow slideInRight">
                 <div class="col-sm-1 hidden-sm">&nbsp;</div>
                 <div class="col-12 col-sm-12 font-light"><p>Have Questions?<br>Feel free to e-mail us or send us a message via social media.</p></div>
                 <div class="col-sm-1 hidden-sm">&nbsp;</div>
             </div><!-- /row -->
-            <div id="contact-row-4" class="row">
+            <div id="contact-row-4" class="row wow slideInUp">
                 <div class="col-12 col-lg-4 col-md-4 with-hover-text">
                     <p><a href="mailto:acm.utsa@gmail.com"><i class="icon icon-envelope"></i></a></p>
                      <span class="hover-text font-light ">
                         <div class="contact-text">
-                           acm.utsa @gmail.com
+                           acm.utsa@gmail.com
                         </div>
                      </span>
                 </div><!-- /col12 -->
@@ -292,7 +299,7 @@
                     <p><a target="_blank" href="https://www.facebook.com/acmutsa"><i class="icon icon-facebook"></i></a></p>
                     <span class="hover-text font-light ">
                         <div class="contact-text"> 
-                        facebook.com/ acmutsa
+                        facebook.com/acmutsa
                         </div>
                      </span>
                 </div><!-- /col12 -->
@@ -314,17 +321,17 @@
     <div class="slide story" id="slide-7">
         <div class="container">
             <div class="row title-row">
-                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs footer-left">
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs footer-left wow slideInLeft">
                   <a href="https://www.acm-utsa.org" target="_blank">  
                     <img class="img-responsive" src="images/acm-logo-rectangle.png"> 
                   </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInUp">
                   <a href="#slide-1" class="btn btn-circle page-scroll">
                     <i class="fa fa-level-up animated"></i> 
                   </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs footer-right">
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs footer-right wow slideInRight">
                   <ul class="font-bold">
                     <li class="font-bold"><a href="rowdyhacks.html" target="_blank">Apply</a></li>
                     <li class="font-bold"><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a></li>
@@ -342,6 +349,7 @@
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/mdb.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/clipboard.min.js"></script>
 <script src="js/script.js"></script>
@@ -389,6 +397,10 @@ $(document).ready(function () {
           });
       });
   })(window);
+</script>
+
+<script>
+    new WOW().init();
 </script>
 
 </div>
