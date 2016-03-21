@@ -352,16 +352,12 @@ body {
   height: auto;
   bottom: 0px;
   display: block;
-  vertic-align: center;
 }
 #slide-1 img {
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  max-height: auto;
-}
-#home-row-2 {
-  padding-top: 10%;
+  width: 100%;
+  height: auto;
 }
 
 /* Landing Page Register Button
@@ -581,13 +577,6 @@ body {
   transition: all ease-in .5s;
 }
 
-#contact-row-4 img {
-  display: block;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-
 #contact-row-4 .col-12:hover {
   height: 175px;
   padding-top: 0;
@@ -773,7 +762,10 @@ i {
     padding-left: 0px;
   }
   #home-row-1 {
-    padding-top: 100px;
+    padding-top: 15%;
+  }
+  #home-row-2 {
+    padding-top: 25px;
   }
   .footer-left {
     margin-top: 25px;
