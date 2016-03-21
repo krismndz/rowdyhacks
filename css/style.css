@@ -356,8 +356,9 @@ body {
 #slide-1 img {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 90px;
 }
 
 /* Landing Page Register Button
